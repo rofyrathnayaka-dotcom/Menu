@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate of Heaven Menu | Hiriketiya</title>
+    <style>
+        :root {
+            --primary-green: #2E8B57; /* Tropical Sea Green */
+            --bg-color: #fdfdfd;
+            --text-color: #333;
+            --light-gray: #f4f4f4;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .header {
+            background-color: var(--primary-green);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .header h1 { margin: 0; font-size: 32px; letter-spacing: 2px; }
+        .header p { margin: 10px 0 0; font-size: 16px; opacity: 0.9; }
+        
+        .nav-scroller {
+            background: #fff;
+            position: sticky;
+            top: 0;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            z-index: 100;
+        }
+        .nav-scroller a {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category {
+            margin-bottom: 50px;
+            scroll-margin-top: 80px; /* For sticky header spacing */
+        }
+        .category-title {
+            color: var(--primary-green);
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-green);
+        }
+        .subcategory-title {
+            font-size: 18px;
+            color: #555;
+            margin: 20px 0 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .item:last-child { border-bottom: none; }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .price { 
+            color: var(--primary-green); 
+            white-space: nowrap; 
+            margin-left: 10px;
+        }
+        .desc {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        .note {
+            background-color: var(--light-gray);
+            padding: 10px;
+            font-size: 13px;
+            color: #555;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #333;
+            color: #fff;
+            font-size: 13px;
+        }
+        .social-link {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>GATE OF HEAVEN</h1>
+    <p>HIRIKETIYA</p>
+    <p><i>Authentic Sri Lankan & Western Cuisine</i></p>
+</div>
+
+<div class="nav-scroller">
+    <a href="#grilled">Grilled</a>
+    <a href="#devilled">Devilled</a>
+    <a href="#curry">Rice & Curry</a>
+    <a href="#mains">Mains</a>
+    <a href="#pasta">Pasta</a>
+    <a href="#noodles">Noodles</a>
+    <a href="#friedrice">Fried Rice</a>
+    <a href="#kothu">Kothu</a>
+    <a href="#sandwiches">Sandwiches</a>
+    <a href="#drinks">Drinks</a>
+</div>
+
+<div class="container">
+
+    <div id="grilled" class="category">
+        <h2 class="category-title">Grilled Platters</h2>
+        <div class="note">Served with garlic potatoes and your choice of one side: salad, fries or white rice.</div>
+        
+        <div class="item">
+            <div class="item-header"><span>Grilled Fish w/ Garlic Potatoes</span> <span class="price">Mkt Price</span></div>
+            <div class="desc">Fresh local fish grilled.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Grilled Chicken</span> <span class="price">Rs 2200</span></div>
+            <div class="desc">Tender chicken marinated in garlic and spices.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Grilled Prawns</span> <span class="price">Rs 2800</span></div>
+            <div class="desc">Ocean-fresh prawns grilled with tropical seasoning.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Grilled Cuttlefish</span> <span class="price">Rs 2800</span></div>
+            <div class="desc">Soft, perfectly grilled cuttlefish tossed in garlic and pepper.</div>
+        </div>
+    </div>
+
+    <div id="devilled" class="category">
+        <h2 class="category-title">Devilled Specials</h2>
+        <div class="note">Served with white rice. Spicy coastal glaze.</div>
+
+        <div class="item">
+            <div class="item-header"><span>Fish Devilled</span> <span class="price">Rs 1700</span></div>
+            <div class="desc">Fresh Yellowfin Tuna tossed with onions, chilies.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Chicken Devilled</span> <span class="price">Rs 1800</span></div>
+            <div class="desc">Stir-fried with peppers, onions and sweet-spicy glaze.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Sausage Devilled</span> <span class="price">Rs 1500</span></div>
+            <div class="desc">Crispy sliced sausages wok-fried.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Prawns Devilled</span> <span class="price">Rs 2400</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cuttlefish Devilled</span> <span class="price">Rs 2400</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Seafood Devilled</span> <span class="price">Rs 2400</span></div>
+            <div class="desc">Prawns, cuttlefish and fish mix.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mix Devilled</span> <span class="price">Rs 2450</span></div>
+            <div class="desc">Chicken, seafood, sausage and vegetables.</div>
+        </div>
+    </div>
+
+    <div id="curry" class="category">
+        <h2 class="category-title">Rice & Curry</h2>
+        <div class="desc" style="margin-bottom: 15px;">Traditional Sri Lankan rice served with five homemade curries.</div>
+
+        <div class="item">
+            <div class="item-header"><span>Vegetable</span> <span class="price">Rs 600</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Egg</span> <span class="price">Rs 600</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Fish / Chicken</span> <span class="price">Rs 800</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Set Menu</span> <span class="price">Rs 700</span></div>
+        </div>
+        <div class="note">Add extra Chicken/Fish: Rs 500</div>
+    </div>
+
+    <div id="mains" class="category">
+        <h2 class="category-title">Main Dishes</h2>
+        <div class="item">
+            <div class="item-header"><span>Pan-Fried Chicken</span> <span class="price">Rs 1450</span></div>
+            <div class="desc">Seasoned with mild island spices.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Grilled Chicken (Main)</span> <span class="price">Rs 1850</span></div>
+            <div class="desc">Herb-marinated with a light smoky finish.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Thalapath Fish</span> <span class="price">Rs 1800</span></div>
+            <div class="desc">Yellowfin Tuna lightly seasoned and fried.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cuttlefish</span> <span class="price">Rs 1800</span></div>
+            <div class="desc">Cooked with gentle Sri Lankan spices.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Prawns</span> <span class="price">Rs 1850</span></div>
+            <div class="desc">Prepared with light aromatic seasoning.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Fried Sausages</span> <span class="price">Rs 1200</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Fried Jumbo Sausages</span> <span class="price">Rs 1400</span></div>
+        </div>
+        
+        <h3 class="subcategory-title">Extras</h3>
+        <div class="item-header"><span>White Rice</span> <span class="price">Rs 450</span></div>
+        <div class="item-header"><span>Egg</span> <span class="price">Rs 160</span></div>
+        <div class="item-header"><span>Cheese</span> <span class="price">Rs 300</span></div>
+        <div class="item-header"><span>Chicken</span> <span class="price">Rs 350</span></div>
+        <div class="item-header"><span>Jumbo Sausages</span> <span class="price">Rs 250</span></div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Special Rice</h2>
+        <div class="note">Nasi Goreng: Served with fried rice, devilled chicken leg, curry, egg, chop suey & mushroom/brinjal moju.</div>
+        
+        <div class="item">
+            <div class="item-header"><span>Nasi Goreng Chicken</span> <span class="price">Rs 1300</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Nasi Goreng Mixed</span> <span class="price">Rs 1500</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Nasi Goreng Seafood</span> <span class="price">Rs 1550</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Biryani Rice</span> <span class="price">Rs 1200 / 1600</span></div>
+        </div>
+    </div>
+
+    <div id="pasta" class="category">
+        <h2 class="category-title">Pasta</h2>
+        
+        <h3 class="subcategory-title">Penne Rigate (Fresh Milk Sauce)</h3>
+        <div class="item">
+            <div class="item-header"><span>Penne Egg</span> <span class="price">Rs 900</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Penne Chicken</span> <span class="price">Rs 1200</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Penne Mixed</span> <span class="price">Rs 1450</span></div>
+            <div class="desc">Chicken and seafood.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Penne Seafood</span> <span class="price">Rs 1600</span></div>
+            <div class="desc">Prawns and cuttlefish.</div>
+        </div>
+
+        <h3 class="subcategory-title">Spaghetti</h3>
+        <div class="item">
+            <div class="item-header"><span>Spaghetti Pomodoro & Chicken</span> <span class="price">Rs 1700</span></div>
+            <div class="desc">Tomato-based sauce with tender chicken & cheese.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Spaghetti Carbonara</span> <span class="price">Rs 1650</span></div>
+            <div class="desc">Creamy carbonara with chicken & cheese.</div>
+        </div>
+    </div>
+
+    <div id="noodles" class="category">
+        <h2 class="category-title">Noodles</h2>
+        <div class="item">
+            <div class="item-header"><span>Vegetable</span> <span class="price">Rs 800</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Egg</span> <span class="price">Rs 900</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Chicken</span> <span class="price">Rs 1200</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Seafood</span> <span class="price">Rs 1450</span></div>
+            <div class="desc">Prawns, fish, cuttlefish and vegetables.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mixed</span> <span class="price">Rs 1400</span></div>
+            <div class="desc">Chicken, fish, prawns, cuttlefish, sausages.</div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Gate Of Heaven Special</span> <span class="price">Rs 1600</span></div>
+            <div class="desc">Fried egg, prawns, jumbo sausage and cuttlefish.</div>
+        </div>
+    </div>
+
+    <div id="friedrice" class="category">
+        <h2 class="category-title">Fried Rice</h2>
+        <div class="item">
+            <div class="item-header"><span>Vegetable</span> <span class="price">Rs 800</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Egg</span> <span class="price">Rs 900</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Chicken</span> <span class="price">Rs 1200</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mixed</span> <span class="price">Rs 1300</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Seafood</span> <span class="price">Rs 1350</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Prawns</span> <span class="price">Rs 1400</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Gate Of Heaven Special</span> <span class="price">Rs 1650</span></div>
+            <div class="desc">Signature rice with jumbo sausages, fried egg, prawns, cuttlefish.</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Chop Suey with Rice</h2>
+        <div class="note">Stir-fried in light savory sauce.</div>
+        <div class="item">
+            <div class="item-header"><span>Vegetable</span> <span class="price">Rs 1400</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Chicken</span> <span class="price">Rs 1600</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mixed / Seafood</span> <span class="price">Rs 1900</span></div>
+        </div>
+    </div>
+
+    <div id="kothu" class="category">
+        <h2 class="category-title">Kothu Roti</h2>
+        <div class="item">
+            <div class="item-header"><span>Vegetable</span> <span class="price">Rs 800</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Egg</span> <span class="price">Rs 900</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cheese</span> <span class="price">Rs 1100</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Chicken</span> <span class="price">Rs 1200</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cheese Chicken</span> <span class="price">Rs 1300</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mixed</span> <span class="price">Rs 1300</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Seafood</span> <span class="price">Rs 1350</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cheese Mixed</span> <span class="price">Rs 1450</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Gate Of Heaven Special</span> <span class="price">Rs 1700</span></div>
+            <div class="desc">Jumbo sausage, fried eggs, prawns, cuttlefish.</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Soups & Ramen</h2>
+        <h3 class="subcategory-title">Soups</h3>
+        <div class="item-header"><span>Vegetable</span> <span class="price">Rs 600</span></div>
+        <div class="item-header"><span>Egg</span> <span class="price">Rs 650</span></div>
+        <div class="item-header"><span>Corn</span> <span class="price">Rs 700</span></div>
+        <div class="item-header"><span>Chicken</span> <span class="price">Rs 800</span></div>
+        <div class="item-header"><span>Prawns</span> <span class="price">Rs 900</span></div>
+        <div class="item-header"><span>Mixed</span> <span class="price">Rs 1100</span></div>
+
+        <h3 class="subcategory-title">Ramen</h3>
+        <div class="item-header"><span>Classic</span> <span class="price">Rs 1100</span></div>
+        <div class="item-header"><span>Cheese</span> <span class="price">Rs 1200</span></div>
+        <div class="item-header"><span>Chicken</span> <span class="price">Rs 1450</span></div>
+        <div class="item-header"><span>Mixed</span> <span class="price">Rs 1700</span></div>
+    </div>
+
+    <div id="sandwiches" class="category">
+        <h2 class="category-title">Sandwiches & Sides</h2>
+        <div class="note">All sandwiches served with French Fries.</div>
+
+        <div class="item">
+            <div class="item-header"><span>Egg Sandwich</span> <span class="price">Rs 750</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Chicken Sandwich</span> <span class="price">Rs 900</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Cheese Sandwich</span> <span class="price">Rs 950</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Club Sandwich</span> <span class="price">Rs 1350</span></div>
+            <div class="desc">Chicken, sausages, cheese, onion, tomato, layered.</div>
+        </div>
+
+        <h3 class="subcategory-title">Side Dishes</h3>
+        <div class="item-header"><span>Sri Lankan Omelette</span> <span class="price">Rs 600</span></div>
+        <div class="item-header"><span>Cheese Omelette</span> <span class="price">Rs 750</span></div>
+        <div class="item-header"><span>French Fries</span> <span class="price">Rs 1000</span></div>
+        <div class="item-header"><span>Garlic Potatoes</span> <span class="price">Rs 1100</span></div>
+        <div class="item-header"><span>Cashew Nuts</span> <span class="price">Rs 1200</span></div>
+        <div class="item-header"><span>Hot Butter Mushrooms</span> <span class="price">Rs 1200</span></div>
+        <div class="item-header"><span>Devilled Kangkung</span> <span class="price">Rs 900</span></div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">Desserts</h2>
+        <div class="item-header"><span>Fruit Salad</span> <span class="price">Rs 700</span></div>
+        <div class="item-header"><span>Ice Cream</span> <span class="price">Rs 650</span></div>
+        <div class="item-header"><span>Banana Fritters w/ Ice Cream</span> <span class="price">Rs 950</span></div>
+        <div class="item-header"><span>Watalappan</span> <span class="price">Rs 650</span></div>
+        <div class="item-header"><span>Caramel Pudding</span> <span class="price">Rs 650</span></div>
+        <div class="item-header"><span>Cake of the Day</span> <span class="price">Rs 650</span></div>
+    </div>
+
+    <div id="drinks" class="category">
+        <h2 class="category-title">Drinks</h2>
+        
+        <div class="item">
+            <div class="item-header"><span>King Coconut (Cold)</span> <span class="price">Rs 450</span></div>
+        </div>
+
+        <h3 class="subcategory-title">Fresh Juices</h3>
+        <div class="item">
+            <div class="item-header"><span>Lime</span> <span class="price">Rs 600</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Papaya / Watermelon</span> <span class="price">Rs 700 / 750</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mango</span> <span class="price">Rs 750</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Passion Fruit / Pineapple</span> <span class="price">Rs 800</span></div>
+        </div>
+        <div class="item">
+            <div class="item-header"><span>Mixed Fruit</span> <span class="price">Rs 800</span></div>
+        </div>
+
+        <h3 class="subcategory-title">Smoothies</h3>
+        <div class="item-header"><span>Banana</span> <span class="price">Rs 900</span></div>
+        <div class="item-header"><span>Papaya / Mango</span> <span class="price">Rs 950</span></div>
+        <div class="item-header"><span>Pineapple</span> <span class="price">Rs 990</span></div>
+        <div class="item-header"><span>Mixed Fruit</span> <span class="price">Rs 1200</span></div>
+
+        <h3 class="subcategory-title">Milkshakes</h3>
+        <div class="item-header"><span>Chocolate / Vanilla</span> <span class="price">Rs 1000</span></div>
+        <div class="item-header"><span>Papaya</span> <span class="price">Rs 1300</span></div>
+        <div class="item-header"><span>Pineapple / Mango</span> <span class="price">Rs 1350</span></div>
+
+        <h3 class="subcategory-title">Mojitos (Non-Alcoholic)</h3>
+        <div class="item-header"><span>Lime</span> <span class="price">Rs 750</span></div>
+        <div class="item-header"><span>Watermelon / Blue Mint</span> <span class="price">Rs 800</span></div>
+        <div class="item-header"><span>Coke / Passion Fruit</span> <span class="price">Rs 900</span></div>
+
+        <h3 class="subcategory-title">Soft Drinks & Water</h3>
+        <div class="item-header"><span>Coca-Cola / Sprite / Fanta (300ml)</span> <span class="price">Rs 250</span></div>
+        <div class="item-header"><span>Coca-Cola / Sprite / Fanta (400ml)</span> <span class="price">Rs 300</span></div>
+        <div class="item-header"><span>Large Bottles (1L / 1.5L)</span> <span class="price">Rs 450 / 550</span></div>
+        <div class="item-header"><span>EGB / Soda</span> <span class="price">Rs 300</span></div>
+        <div class="item-header"><span>Mineral Water (Large 1.5L)</span> <span class="price">Rs 200</span></div>
+        
+        <h3 class="subcategory-title">Hot Beverages</h3>
+        <div class="item-header"><span>Tea / Coffee</span> <span class="price">Rs 150</span></div>
+        <div class="item-header"><span>Tea / Coffee (with Milk)</span> <span class="price">Rs 200</span></div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Gate of Heaven Hiriketiya</p>
+    <a href="https://instagram.com/gateofheaven_hiriketiya" class="social-link">Follow us on Instagram</a>
+</div>
+
+</body>
+</html>
